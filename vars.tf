@@ -1,0 +1,3 @@
+variable "url_influx" {
+    
+}
