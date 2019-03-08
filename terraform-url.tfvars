@@ -1,1 +1,1 @@
-influxdb_url = "http://35.203.164.189:8086"
+influxdb_url = "http://35.199.185.183:8086"
