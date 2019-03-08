@@ -1,3 +1,3 @@
-variable "url_influx" {
-    
+variable "influxdb_url" {
+
 }

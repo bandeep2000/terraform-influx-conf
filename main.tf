@@ -1,6 +1,6 @@
 provider "influxdb" {
   //url = "http://35.197.76.190:8086"
-  url = "${var.url_influx}"
+  url = "${var.influx_url}"
 }
 
 resource "influxdb_database" "metrics" {
