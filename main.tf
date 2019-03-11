@@ -3,8 +3,20 @@ provider "influxdb" {
   url = "${var.influxdb_url}"
 }
 
-resource "influxdb_database" "metrics" {
-  name = "awesome_app"
+resource "influxdb_database" "default" {
+  name = "stratus"
+}
+
+resource "influxdb_database" "mercury" {
+  name = "mercury"
+}
+
+resource "influxdb_database" "venus" {
+  name = "venus"
+}
+
+resource "influxdb_database" "mars" {
+  name = "mars"
 }
 
 /*resource "influxdb_continuous_query" "minnie" {
