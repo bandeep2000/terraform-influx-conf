@@ -5,6 +5,18 @@ provider "influxdb" {
 
 resource "influxdb_database" "default" {
   name = "stratus"
+  retention_policies = [
+    {
+      name = "30days",
+      duration = "30d"
+      default = "true"
+    },
+    {
+      name = "7d",
+      duration = "7d"
+
+    },
+  ]
 }
 
 resource "influxdb_database" "mercury" {
@@ -13,6 +25,7 @@ resource "influxdb_database" "mercury" {
 
 resource "influxdb_database" "venus" {
   name = "venus"
+
 }
 
 resource "influxdb_database" "mars" {
