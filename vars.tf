@@ -1,3 +1,0 @@
-variable "influxdb_url" {
-
-}
